@@ -1,0 +1,124 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100italic,300);
+
+html , body {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.main-container {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+.header {
+  height: 75px;
+  width: 100%;
+  background-color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+}
+
+.logo {
+  height: 40px;
+}
+
+#dev-logo {
+  height: 55px;
+}
+
+.hamburger {
+  color: white;
+  float: right;
+  cursor: pointer;
+}
+
+.hamburger:hover {
+  color: #25aae1;
+}
+
+.home-page-content-top {
+  width: 100%;
+  /*height: 400px;*/
+  /*position: relative;
+  background: url('img/devmtn-day-1.jpg')center no-repeat;
+  background-size: cover;*/
+  background-color: #25aae1;
+  padding: 40px 20px 40px 20px;
+  float: left;
+}
+
+
+.home-page-intro-text {
+  color: white;
+  margin: 0;
+  padding-top: 20px;
+}
+
+.p {
+  color: white;
+}
+
+.flash-card {
+  height: 200px;
+  width: 90%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.63);
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.slideout-menu {
+  position: fixed;
+  display: block;
+  height: 100%;
+  width: 330px;
+  background-color: rgba(1, 0, 3, 0.9);
+  top: 0;
+  right: -350px;
+  overflow: scroll;
+}
+
+.top-menu-section {
+  width: 100%;
+  height: 75px;
+}
+
+.topics {
+  height: 75px;
+  width: 100%;
+  text-align: right;
+  font-size: 25px;
+  color: white;
+  padding-right: 30px;
+}
+
+.topics:hover {
+    color: #25aae1;
+}
+
+#slideout-closed-menu-button {
+  padding-top: 14px;
+  padding-left: 20px;
+  float: left;
+  display: show;
+  color: white;
+}
+
+@media (max-width: 886px;) {
+  .slideout-menu {
+    display: none;
+  }
+}

@@ -1,0 +1,105 @@
+<html ng-app='flashCards'>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flash Cards</title>
+
+    <link rel="stylesheet" type="text/css "href="css/style.css" media="screen" title="no title" charset="utf-8">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.0.8/gridlex.css">
+
+<!-- Font Awesome Icons (Hamburger menu) -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  </head>
+
+
+  <body ng-controller="mainCtrl">
+
+    <main class="main-container">
+        <header class="header">
+          <div id="slideout-open-menu-button" class="hamburger"><i class="fa fa-bars fa-3x"></i>
+          </div>
+            <section class="logo">
+                <img id="dev-logo" src="img/devmountain_logo_only.png">
+            </section>
+        </header>
+
+        <div class="home-page-content-top">
+            <div class="flash-card">
+                <h1 class="home-page-intro-text"> Welcome to Flashy!
+                </h1>
+                <p class="p">
+                  Tap to get started
+                </p>
+            </div>
+        </div>
+
+        <div class="home-page-content-top">
+            <div class="flash-card">
+                <h1 class="home-page-intro-text"> Welcome to Flashy!
+                </h1>
+                <p class="p">
+                  Tap to get started
+                </p>
+            </div>
+        </div>
+
+
+        <aside class="slideout-menu">
+            <section class="top-menu-section">
+
+                <div id="slideout-closed-menu-button" class="close"><i class="fa fa-times fa-2x"></i>
+                </div>
+
+            </section>
+
+            <section class="topics">SERVICES</section>
+            <section class="topics">COMPANY</section>
+            <section class="topics">PORTFOLIO</section>
+            <section class="topics">CAREERS</section>
+            <section class="topics">BLOG</section>
+        </aside>
+
+
+
+      <!-- <section class="left-menu-section">
+        <section class="search-bar">
+          <input ng-model="filterTopic" class="search" type="text" placeholder="Search by topic" name="search" value="">
+        </section>
+
+        <a ui-sref="{{topic.state}}" ng-repeat='topic in topics | filter: filterTopic '>
+          <p class="topic-names">
+            {{topic.name}}
+          </p>
+      </a>
+
+
+      </section> -->
+
+      <section ui-view>
+
+
+
+      </section>
+
+          <!-- <footer-directive></footer-directive> -->
+
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js'>
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js"></script>
+
+
+
+    <script src='js/app.js'></script>
+    <script src='controllers/mainCtrl.js'></script>
+    <script src='services/topicService.js'></script>
+    <!-- <script src='js/footerDirective.js'></script> -->
+
+
+
+
+  </body>
+</html>
