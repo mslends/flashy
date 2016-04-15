@@ -1,0 +1,12 @@
+<form class="addCardForm" method="post">
+  <input ng-model="question" type="text" name="Question" placeholder="Add a Question" value="">
+  <input ng-model="answer" type="text" name="Answer" placeholder="Add an Answer" value="">
+  <button ng-click="newCard()" type="button" name="button">Save Card</button>
+  <select class="dropDown" name="" ng-model="topic">
+    <option value="" disabled selected></option>
+    <option ng-repeat="topic in topics" value="{{topic.name}}">{{topic.name}}</option>
+
+  </select>
+
+
+</form>

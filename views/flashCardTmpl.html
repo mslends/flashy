@@ -7,7 +7,7 @@
             {{card.question}}
           </p>
         </div>
-        <div class="face back">
+        <div ng-class="{'overflow': isFlipped}" class="face back">
           <p class="p-back">
             {{card.answer}}
           </p>

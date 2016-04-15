@@ -18,7 +18,7 @@ body {
 .main-container {
   height: 100%;
   width: 100%;
-  background-color: red;
+  background-color: #25aae1;
 }
 
 .header {
@@ -178,6 +178,13 @@ body {
   background: rgba(255, 255, 255, 0.9);
   color: black;
   cursor: pointer;
+
+}
+.noOverflow {
+  display: hidden;
+}
+.overflow {
+  overflow: scroll;
 }
 
 @media (min-width: 886px) {
@@ -187,5 +194,7 @@ body {
 
   .flash-card {
     max-width: 500px;
+    margin: 30px auto;
   }
+
 }

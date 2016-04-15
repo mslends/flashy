@@ -1,4 +1,4 @@
-angular.module("flashCards").controller('navCtrl', function($scope, topicService, flashCardService, $stateParams, $rootScope) {
+angular.module("flashCards").controller('navCtrl', function($scope, topicService, flashCardService, $stateParams) {
 
 
 $scope.topics = topicService.getTopics();

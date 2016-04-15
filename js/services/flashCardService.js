@@ -44,7 +44,9 @@ var flashCards = {
 this.getFlashCards = function(topic) {
   return flashCards[topic];
 }
-console.log(flashCards.git);
 
+this.addNewCard = function(obj) {
+  flashCards[obj.topic].push(obj);
+}
 
 });

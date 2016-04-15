@@ -11,5 +11,10 @@ angular.module("flashCards", ['ui.router'])
           templateUrl: 'views/topicView/topicTmpl.html',
           controller:'topicViewCtrl'
         })
+        .state('addCardForm',{
+          url: '/addCardForm',
+          templateUrl: 'views/topicView/addCardForm.html',
+          controller: 'topicViewCtrl'
+        })
 
 });
