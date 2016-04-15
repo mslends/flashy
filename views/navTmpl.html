@@ -1,0 +1,26 @@
+
+<header class="header">
+
+  <div id="slideout-open-menu-button" class="hamburger"><i class="fa fa-bars fa-3x"></i>
+  </div>
+    <section class="logo">
+        <img id="dev-logo" src="img/devmountain_logo_only.png">
+    </section>
+</header>
+
+
+
+<aside class="slideout-menu">
+    <section class="top-menu-section">
+
+        <input ng-model="filterTopics"  class="Search" type="text" name="name" placeholder="Search by topic">
+        <div id="slideout-closed-menu-button" class="close"><i class="fa fa-times fa-3x"></i>
+        </div>
+
+    </section>
+
+    <section class="topics" ng-repeat='topic in topics | filter: filterTopics'>
+      <a class="topicLinks" ui-sref="topic({topicId:topic.name})">{{topic.name}}</a>
+    </section>
+
+</aside>

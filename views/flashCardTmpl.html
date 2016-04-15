@@ -1,0 +1,16 @@
+
+<!--Code for each flash card  -->
+<div ng-repeat="card in flashCards" class="flash-card">
+    <div class="card" ng-class="{'flipped':isFlipped}" ng-click="isFlipped=!isFlipped">
+        <div class="face front">
+          <p class="p-front">
+            {{card.question}}
+          </p>
+        </div>
+        <div class="face back">
+          <p class="p-back">
+            {{card.answer}}
+          </p>
+        </div>
+    </div>
+</div>
