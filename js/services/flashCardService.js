@@ -47,6 +47,7 @@ this.getFlashCards = function(topic) {
 
 this.addNewCard = function(obj) {
   flashCards[obj.topic].push(obj);
+  alert('Card Added to the ' + obj.topic + ' topic!');
 }
 
 });
