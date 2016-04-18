@@ -13,35 +13,27 @@ angular.module("flashCards").service("topicService", function() {
       state: 'css'
     },
     {
-      name: 'CSS POSITIONING',
+      name: 'POSITIONING',
       state: 'cssPositioning'
     },
     {
-      name: 'ADVANCED HTML',
-      state: 'advHtml'
-    },
-    {
-      name: 'ADVANCED CSS',
-      state: 'advCss'
-    },
-    {
-      name: 'JS FUNDAMENTALS (FUNCTIONS)',
+      name: 'FUNCTIONS',
       state: 'jsFundamentals'
     },
     {
-      name: 'JS OBJECTS',
+      name: 'OBJECTS',
       state: 'jsObj'
     },
     {
-      name: '".THIS',
+      name: 'THIS',
       state: 'this'
     },
     {
-      name: 'JS CALLBACKS',
+      name: 'CALLBACKS',
       state: 'callbacks'
     },
     {
-      name: 'JS PROTOTYPES',
+      name: 'PROTOTYPES',
       state: 'prototypes'
     },
     {
@@ -49,15 +41,11 @@ angular.module("flashCards").service("topicService", function() {
       state: 'jquery'
     },
     {
-      name: 'JQUERY 2',
-      state: 'jquery2'
-    },
-    {
       name: 'ANGULAR',
       state: 'angular'
     },
     {
-      name: 'ANGULAR SERVICES',
+      name: 'SERVICES',
       state: 'angularServices'
     },
     {
@@ -65,7 +53,7 @@ angular.module("flashCards").service("topicService", function() {
       state: 'angular$http'
     },
     {
-      name: '$Q.DEFER',
+      name: '$Q',
       state: 'angular$q'
     },
     {
@@ -73,7 +61,7 @@ angular.module("flashCards").service("topicService", function() {
       state: 'jsonp'
     },
     {
-      name: 'UI-ROUTER',
+      name: 'UIROUTER',
       state: 'angularRouter'
     },
     {

@@ -9,20 +9,19 @@ return {
     topics: '='
   },
   link : function(scope, elements, attributes){
-    console.log("hit");
-    console.log(scope.topics);
+    console.log("jquery menu functionality working!");
     // Jquery to make the hamburger menu slide in and out
             $('#slideout-open-menu-button').on("click", function() {
               if($('.slideout-menu:hidden')) {
                 $('.slideout-menu').animate({right:'0'}, 350, function() {});
               }
-            })
+            });
 
             $('#slideout-closed-menu-button').on("click", function() {
               if($('.slideout-menu:visible')) {
                 $('.slideout-menu').animate({right:'-350px'}, 350, function() {});
               }
-            })
+            });
        }
 
     }

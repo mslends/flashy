@@ -2,8 +2,9 @@
 <!-- blue background behind all flash cards or content container -->
 <div class="home-page-content" id="update">
   <div class="addCardButtonSection">
+    <!-- {{flashCards}} -->
     <button class="addCardButton" ui-sref="addCardForm" type="button" name="button">Add New Card</button>
   </div>
   <!-- Flash card code from flashCardTmpl.html -->
-<flash-card-directive flash-cards="flashCards"></flash-card-directive>
+<flash-card-directive flash-cards="flashCards[currentstate]"></flash-card-directive>
 </div>

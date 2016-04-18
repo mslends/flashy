@@ -39,8 +39,8 @@ body {
 }
 
 .addNewCardForm {
-  height: 400px;
-  width: 400px;
+  /*height: 300px;*/
+  width: 90%;
   background: rgba(1, 0, 3, 0.9);
   color: white;
   cursor: pointer;
@@ -76,13 +76,24 @@ body {
 }
 
 .dropDownMenuSection {
-  width: 100%;
-  background-color: none;
-  margin-bottom: 10px;
+
+}
+
+/*select {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}*/
+
+select:focus {
+  outline: none;
 }
 
 .dropdown {
-
+  height: 30px;
+  border: none;
+  width: 80%;
+  border-radius: 0;
+  margin-bottom: 20px;
 }
 
 .addCardButtonSection {

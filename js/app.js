@@ -1,4 +1,5 @@
-angular.module("flashCards", ['ui.router'])
+angular.module("flashCards", ['ui.router', 'firebase'])
+.constant('firebaseUrl', 'https://flashington.firebaseio.com/')
 .config(function($urlRouterProvider, $stateProvider) {
   $urlRouterProvider.otherwise('/');
     $stateProvider
@@ -9,7 +10,14 @@ angular.module("flashCards", ['ui.router'])
         .state('topic',{
           url: '/topic/:topicId',
           templateUrl: 'views/topicView/topicTmpl.html',
-          controller:'topicViewCtrl'
+          controller:'topicViewCtrl',
+        //   resolve: {
+        //
+				// 	//creates ref accessed by threadsCtrl that returns threads
+				// 	flashCardsRef: function(threadSvc) {
+				// 		return flashCardService.getFlashCards();
+				// 	}
+				// }
         })
         .state('addCardForm',{
           url: '/addCardForm',
