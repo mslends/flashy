@@ -5,4 +5,21 @@ $scope.topics = topicService.getTopics();
 console.log($scope.topics);
 
 
+var mygetFirebaseRef = new Firebase("https://flashington.firebaseio.com/-KFfkkrNdwYPjejVmzWc/");
+var obj = $firebaseArray(mygetFirebaseRef);
+$scope.stuffynames = obj;
+
+// After the "Save" button is clicked, this function pushes whatever was put into the text field into my array. It is tied to topicService.js
+$scope.newTopic = function(newMenuTopic) {
+  console.log("newTopic Function hit!");
+  var something = {
+    name: newMenuTopic,
+    state: newMenuTopic
+  };
+  flashCardService.addNewTopic(something);
+
+  var obj = {topic:[]};
+  flashCardService.addNewTopic(obj);
+  // $scope.flashCards = flashCardService.getFlashCards($scope.topic);
+}
 });

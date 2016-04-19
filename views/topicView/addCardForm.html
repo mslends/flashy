@@ -14,7 +14,7 @@
     <section class="dropDownMenuSection">
       <select class="dropDown" name="" ng-model="topic">
         <option value="" disabled selected>Choose Which Topic To Add To</option>
-        <option ng-repeat="topic in topics" value="{{topic.name}}">{{topic.name}}</option>
+        <option ng-repeat="topic in stuffynames" value="{{topic.$id}}">{{topic.$id}}</option>
       </select>
     </section>
 

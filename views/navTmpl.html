@@ -18,9 +18,20 @@
         </div>
     </section>
 
+<!-- Button at the top of the menu adds a new topic to my topics array -->
+    <section class="addNewTopicSection">
+      <button class="addNewTopicButton" value="toggle"   type="button" name="button" ng-click="toggle = !toggle">Add New Topic</button>
+      <input ng-show="toggle" class="addNewTopicField" type="text"  placeholder="Add New Topic" ng-model="newMenuTopic">
+
+<!-- Add New Topic button -->
+      <button ng-click="newTopic(newMenuTopic)" ng-show="toggle" class="addNewTopicButton" value="toggle"   type="button" name="button">Save</button>
+
+<!-- Delete Topic Button -->
+      <button ng-click="newTopic(newMenuTopic)" class="deleteTopicButton" value="toggle"   type="button" name="button">Delete Topic</button>
+    </section>
 <!-- Repeating over the topics array on topicService.js and putting topics on scope -->
-    <section class="topics" ng-repeat='topic in topics | filter: filterTopics'>
-      <a class="topicLinks" ui-sref="topic({topicId:topic.name})">{{topic.name}}</a>
+    <section class="topics" ng-repeat='topic in stuffynames | filter: filterTopics'>
+      <a class="topicLinks" ui-sref="topic({topicId:topic.$id})">{{topic.$id}}</a>
     </section>
 
 </aside>

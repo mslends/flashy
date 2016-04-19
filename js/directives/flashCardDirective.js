@@ -6,7 +6,8 @@ return {
   controller: 'mainCtrl',
   scope: {
     topics: '=',
-    flashCards: '='
+    flashCards: '=',
+    toggle: '='
   }
 }
 

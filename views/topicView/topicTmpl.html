@@ -5,7 +5,9 @@
 
     <!-- Button redirects the user to the addCardForm where they can add a new flashcard to any topic -->
     <button class="addCardButton" ui-sref="addCardForm" type="button" name="button">Add New Card</button>
+
+    <button class="deleteCardButton" type="button" name="button" value="toggle" ng-click="toggle = !toggle">Delete Card</button>
   </div>
   <!-- Reusable Flash card html from flashCardTmpl.html -->
-<flash-card-directive flash-cards="flashCards[currentstate]"></flash-card-directive>
+<flash-card-directive flash-cards="flashCards[currentstate]" toggle="toggle"></flash-card-directive>
 </div>

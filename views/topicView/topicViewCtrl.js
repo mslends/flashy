@@ -17,6 +17,10 @@ angular.module("flashCards").controller('topicViewCtrl', function($scope, $state
   $scope.flashCards = obj;
   console.log($scope.flashCards);
 
+  var arr = $firebaseArray(mygetFirebaseRef);
+  $scope.stuffynames = arr;
+
+
 
 // Function below is ran when a user clicks the "Save Card" button (ng-click) on the addCardForm.html(bottom of page).
 $scope.newCard = function() {
@@ -29,5 +33,7 @@ $scope.newCard = function() {
   );
   // $scope.flashCards = flashCardService.getFlashCards($scope.topic);
 }
+
+
 
 });

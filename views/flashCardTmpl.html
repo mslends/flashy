@@ -2,9 +2,15 @@
 <div ng-repeat="card in flashCards" class="flash-card">
     <div class="card" ng-class="{'flipped':isFlipped}" ng-click="isFlipped=!isFlipped">
         <div class="face front">
-          <p class="p-front">
-            {{card.question}}
-          </p>
+          <div id="delete-button-card-section">
+            <i ng-show="toggle" class="delete-card-button fa fa-times fa-1x"></i>
+          </div>
+          <div class="content-section">
+            <p class="p-front">
+              {{card.question}}
+            </p>
+          </div>
+
         </div>
         <div ng-class="{'overflow': isFlipped}" class="face back">
           <p class="p-back">

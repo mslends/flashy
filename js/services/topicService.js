@@ -49,11 +49,11 @@ angular.module("flashCards").service("topicService", function() {
       state: 'angularServices'
     },
     {
-      name: '$HTTP',
+      name: 'HTTP',
       state: 'angular$http'
     },
     {
-      name: '$Q',
+      name: 'Q',
       state: 'angular$q'
     },
     {
@@ -96,6 +96,11 @@ angular.module("flashCards").service("topicService", function() {
 
 this.getTopics = function() {
   return topics;
-}
+};
+
+this.addTopics = function(topic) {
+  topics.push(topic);
+  return topics
+};
 
 });

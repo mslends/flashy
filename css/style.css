@@ -48,6 +48,19 @@ body {
   padding: 10px 20px 10px 20px;
 }
 
+.deleteCardButton {
+  margin-bottom: 30px;
+  background: none;
+  color: white;
+  width: 90%;
+  height: 50px;
+  font-family: Proxima Nova Rg, Arial, sans-serif;
+  font-size: 18px;
+  border: solid;
+  border-width: 1px;
+  padding: 10px 20px 10px 20px;
+}
+
 .saveCardButton {
   margin-bottom: 30px;
   background: none;
@@ -153,7 +166,6 @@ select:focus {
   z-index: 9;
 }
 
-
 /*The top section in the menu. Contains the search bar and X icon.*/
 .top-menu-section {
   width: 100%;
@@ -164,7 +176,42 @@ select:focus {
   margin-bottom: 35px;
 }
 
+.addNewTopicSection {
+  text-align: center;
+}
 
+.addNewTopicButton {
+  margin-bottom: 30px;
+  background: none;
+  color: white;
+  width: 80%;
+  height: 50px;
+  font-family: Proxima Nova Rg, Arial, sans-serif;
+  font-size: 18px;
+  border: solid;
+  border-width: 1px;
+  padding: 10px 20px 10px 20px;
+}
+
+.addNewTopicField {
+  height: 50px;
+  width: 80%;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.deleteTopicButton {
+  margin-bottom: 30px;
+  background: none;
+  color: white;
+  width: 80%;
+  height: 50px;
+  font-family: Proxima Nova Rg, Arial, sans-serif;
+  font-size: 18px;
+  border: solid;
+  border-width: 1px;
+  padding: 10px 20px 10px 20px;
+}
 /*All styling for the topics in the menu*/
 .topics {
   height: 75px;
@@ -204,6 +251,26 @@ select:focus {
 #slideout-closed-menu-button:hover {
   color: #25aae1;
   cursor: pointer;
+}
+
+/*.content-section {
+  width: 100%;
+  background-color: red;
+}*/
+/*#delete-button-card-section {
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 10px;
+}*/
+
+.delete-card-button {
+  float: right;
+  display: show;
+  color: white;
+}
+
+.delete-card-button:hover {
+  color: red;
 }
 
 
@@ -298,7 +365,27 @@ select:focus {
     margin: 30px auto;
   }
 
+
+  .addCardButtonSection {
+    width: 500px;
+    background-color: none;
+    margin: 0 auto;
+  }
+
   .addCardButton {
+    margin-bottom: 30px;
+    background: none;
+    color: white;
+    width: 400px;
+    height: 50px;
+    font-family: Proxima Nova Rg, Arial, sans-serif;
+    font-size: 18px;
+    border: solid;
+    border-width: 1px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .deleteCardButton {
     margin-bottom: 30px;
     background: none;
     color: white;
