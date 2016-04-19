@@ -253,6 +253,7 @@ var mypostFirebaseRef = new Firebase("https://flashington.firebaseio.com/-KFfkkr
 
 // This function pushes the data from my addCardForm.html to my Firebase. It alerts me when the button is clicked and info is added to the appropriate topic that you select to add to.
 this.addNewCard = function(obj) {
+  console.log("add new card hit!");
   alert('Card Added to the ' + obj.topic + ' topic!');
   mypostFirebaseRef.child(obj.topic).push(obj);
 }
@@ -263,10 +264,16 @@ this.addNewCard = function(obj) {
 
 this.addNewTopic = function(topic) {
     console.log("Reached the service", topic);
+      alert('Topic Added to the menu 1!');
   var mypostFirebaseRef2 = new Firebase("https://flashington.firebaseio.com/-KFfkkrNdwYPjejVmzWc/"+topic.name);
 
   mypostFirebaseRef2.set([{question: "What is "+ topic.name + "?", answer: "Code"}]);
 }
 
+
+this.deleteCard = function(topic) {
+  console.log("Flash Card Deleted!");
+    var mypostFirebaseRef2 = new Firebase("https://flashington.firebaseio.com/-KFfkkrNdwYPjejVmzWc/"+topic.name);
+}
 
 });

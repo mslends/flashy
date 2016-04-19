@@ -6,7 +6,8 @@ return {
   templateUrl: "views/navTmpl.html",
   controller: 'navCtrl',
   scope: {
-    topics: '='
+    topics: '=',
+    toggle: '='
   },
   link : function(scope, elements, attributes){
     console.log("jquery menu functionality working!");

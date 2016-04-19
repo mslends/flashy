@@ -1,9 +1,9 @@
 <!--Reusable HTML Code for each flash card  -->
-<div ng-repeat="card in flashCards" class="flash-card">
+<div ng-repeat="card in flashCards track by $index" class="flash-card">
     <div class="card" ng-class="{'flipped':isFlipped}" ng-click="isFlipped=!isFlipped">
         <div class="face front">
           <div id="delete-button-card-section">
-            <i ng-show="toggle" class="delete-card-button fa fa-times fa-1x"></i>
+            <i ng-click="deleteCard()" ng-show="toggle" class="delete-card-button fa fa-times fa-1x"></i>
           </div>
           <div class="content-section">
             <p class="p-front">

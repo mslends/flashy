@@ -36,4 +36,6 @@ $scope.newCard = function() {
 
 
 
+
+
 });

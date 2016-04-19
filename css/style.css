@@ -212,6 +212,10 @@ select:focus {
   border-width: 1px;
   padding: 10px 20px 10px 20px;
 }
+
+.delete-topic-button {
+
+}
 /*All styling for the topics in the menu*/
 .topics {
   height: 75px;
@@ -258,7 +262,8 @@ select:focus {
   background-color: red;
 }*/
 /*#delete-button-card-section {
-  width: 100%;
+  z-index: 100;
+  position: absolute;
   padding-top: 10px;
   padding-right: 10px;
 }*/

@@ -11,4 +11,8 @@ console.log($scope.topics);
         $('.slideout-menu').animate({right:'-350px'}, 350, function() {});
       }
     });
+
+    $scope.deleteCard = function(card) {
+      flashCardService.deleteCard(card);
+    }
 });

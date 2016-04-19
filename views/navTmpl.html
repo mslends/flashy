@@ -27,11 +27,13 @@
       <button ng-click="newTopic(newMenuTopic)" ng-show="toggle" class="addNewTopicButton" value="toggle"   type="button" name="button">Save</button>
 
 <!-- Delete Topic Button -->
-      <button ng-click="newTopic(newMenuTopic)" class="deleteTopicButton" value="toggle"   type="button" name="button">Delete Topic</button>
+      <button ng-click="toggle1 = !toggle1" class="deleteTopicButton" value="toggle"   type="button" name="button">Delete Topic</button>
     </section>
+
+
 <!-- Repeating over the topics array on topicService.js and putting topics on scope -->
     <section class="topics" ng-repeat='topic in stuffynames | filter: filterTopics'>
-      <a class="topicLinks" ui-sref="topic({topicId:topic.$id})">{{topic.$id}}</a>
+      <a class="topicLinks" ui-sref="topic({topicId:topic.$id})">{{topic.$id}}<i ng-show="toggle1" class="delete-topic-button fa fa-times fa-1x"></i></a>
     </section>
 
 </aside>
