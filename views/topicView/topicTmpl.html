@@ -1,10 +1,11 @@
 
-<!-- blue background behind all flash cards or content container -->
+<!-- blue background behind all flash cards -->
 <div class="home-page-content" id="update">
   <div class="addCardButtonSection">
-    <!-- {{flashCards}} -->
+
+    <!-- Button redirects the user to the addCardForm where they can add a new flashcard to any topic -->
     <button class="addCardButton" ui-sref="addCardForm" type="button" name="button">Add New Card</button>
   </div>
-  <!-- Flash card code from flashCardTmpl.html -->
+  <!-- Reusable Flash card html from flashCardTmpl.html -->
 <flash-card-directive flash-cards="flashCards[currentstate]"></flash-card-directive>
 </div>

@@ -1,5 +1,7 @@
 angular.module("flashCards").service("topicService", function() {
 
+
+// topics array below holds the information for every topic in my menu. (Double click on the line below to expand and show data)
   var topics = [{
       name: 'git',
       state: 'git'
@@ -106,6 +108,7 @@ angular.module("flashCards").service("topicService", function() {
     }
 ];
 
+// Function below gets the topics from the topics Array(above) returns the name of each topic.
 this.getTopics = function() {
   return topics;
 }

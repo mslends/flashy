@@ -1,7 +1,7 @@
 angular.module("flashCards").service("flashCardService", function($firebaseObject) {
 
 
-// flashCards = myFirebaseRef.child('')
+// FlashCards object below(double click on this row to expand). Used this data to build my Firebase database. Leaving it here as a "backup"
 // var flashCards = {
 //           GIT:[
 //             {
@@ -246,16 +246,19 @@ angular.module("flashCards").service("flashCardService", function($firebaseObjec
 //         };
 
 
-        // Firebase
+// Firebase url where data is saved
 var mypostFirebaseRef = new Firebase("https://flashington.firebaseio.com/-KFfkkrNdwYPjejVmzWc/");
 
 
-
+// This function pushes the data from my addCardForm.html to my Firebase. It alerts me when the button is clicked and info is added to the appropriate topic that you select to add to.
 this.addNewCard = function(obj) {
   alert('Card Added to the ' + obj.topic + ' topic!');
   mypostFirebaseRef.child(obj.topic).push(obj);
-  // mypostFirebaseRef.push(flashCards);
-  // flashCards[obj.topic].push(obj);
+
+
+// Used the two lines of code below to push the data from the object above to my Firebase (double click on this row to expand)
+// mypostFirebaseRef.push(flashCards);
+// flashCards[obj.topic].push(obj);
 }
 
 });

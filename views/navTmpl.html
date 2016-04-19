@@ -1,6 +1,7 @@
 
 <header class="header">
 
+<!-- DevMountain logo and Hamburger icon and styling for my slideout menu. Note: hamburger icon is a Font Awesome icon. Sizing needs to be done in-line, below NOT in the style.css file -->
   <div id="slideout-open-menu-button" class="hamburger"><i class="fa fa-bars fa-3x"></i>
   </div>
     <section class="logo">
@@ -9,7 +10,7 @@
 </header>
 
 
-
+<!-- Slideout menu that opens when you click on the hamburger menu icon. Used ng-model to filter topics in the menu by search.  -->
 <aside class="slideout-menu">
     <section class="top-menu-section">
         <input ng-model="filterTopics"  class="Search" type="text" name="name" placeholder="Search by topic">
@@ -17,6 +18,7 @@
         </div>
     </section>
 
+<!-- Repeating over the topics array on topicService.js and putting topics on scope -->
     <section class="topics" ng-repeat='topic in topics | filter: filterTopics'>
       <a class="topicLinks" ui-sref="topic({topicId:topic.name})">{{topic.name}}</a>
     </section>

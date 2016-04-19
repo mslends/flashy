@@ -10,14 +10,7 @@ angular.module("flashCards", ['ui.router', 'firebase'])
         .state('topic',{
           url: '/topic/:topicId',
           templateUrl: 'views/topicView/topicTmpl.html',
-          controller:'topicViewCtrl',
-        //   resolve: {
-        //
-				// 	//creates ref accessed by threadsCtrl that returns threads
-				// 	flashCardsRef: function(threadSvc) {
-				// 		return flashCardService.getFlashCards();
-				// 	}
-				// }
+          controller:'topicViewCtrl'
         })
         .state('addCardForm',{
           url: '/addCardForm',
