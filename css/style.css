@@ -29,7 +29,20 @@ body {
   margin-bottom: 30px;
   background: none;
   color: white;
-  width: 80%;
+  width: 90%;
+  height: 50px;
+  font-family: Proxima Nova Rg, Arial, sans-serif;
+  font-size: 18px;
+  border: solid;
+  border-width: 1px;
+  padding: 10px 20px 10px 20px;
+}
+
+.saveCardButton {
+  margin-bottom: 30px;
+  background: none;
+  color: white;
+  width: 90%;
   height: 50px;
   font-family: Proxima Nova Rg, Arial, sans-serif;
   font-size: 18px;
@@ -75,9 +88,6 @@ body {
   font-size: 20px;
 }
 
-.dropDownMenuSection {
-
-}
 
 /*select {
   -webkit-appearance: none;
@@ -91,7 +101,7 @@ select:focus {
 .dropdown {
   height: 30px;
   border: none;
-  width: 80%;
+  width: 90%;
   border-radius: 0;
   margin-bottom: 20px;
 }
@@ -181,6 +191,11 @@ select:focus {
   float: right;
   display: show;
   color: white;
+}
+
+#slideout-closed-menu-button:hover {
+  color: #25aae1;
+  cursor: pointer;
 }
 
 .home-page-content {
@@ -288,6 +303,30 @@ select:focus {
     border: solid;
     border-width: 1px;
     padding: 10px 20px 10px 20px;
+  }
+
+  .saveCardButton {
+    margin-bottom: 30px;
+    background: none;
+    color: white;
+    width: 90%;
+    height: 50px;
+    font-family: Proxima Nova Rg, Arial, sans-serif;
+    font-size: 18px;
+    border: solid;
+    border-width: 1px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  .addNewCardForm {
+    /*height: 300px;*/
+    width: 400px;
+    background: rgba(1, 0, 3, 0.9);
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    margin: 60px auto;
+    padding: 40px;
   }
 
 }
