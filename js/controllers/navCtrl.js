@@ -6,13 +6,13 @@ angular.module("flashCards").controller('navCtrl', function($scope, topicService
 // console.log("get topics hit!");
 
 
+
 var mygetFirebaseRef = new Firebase("https://flashington.firebaseio.com/-KFlALUT2_FKchYLeuOL/");
 var obj = $firebaseArray(mygetFirebaseRef);
-$scope.stuffynames = obj;
+$scope.topics = obj;
 
 // After the "Save" button is clicked, this function pushes whatever was put into the text field into my array. It is tied to topicService.js
 $scope.newTopic = function(newMenuTopic) {
-
   console.log("newTopic Function hit!");
   var something = {
     name: newMenuTopic,
@@ -22,13 +22,15 @@ $scope.newTopic = function(newMenuTopic) {
 
 $scope.newMenuTopic = "";
   var obj = {topic:[]};
-  flashCardService.addNewTopic(obj);
+  // flashCardService.addNewTopic(obj);
   // $scope.flashCards = flashCardService.getFlashCards($scope.topic);
 
 
-  $scope.deleteTopic = function(topic) {
-    console.log("delete topic function hit!");
-    flashCardService.deleteTopic(topic);
-  }
 }
+
+$scope.deleteTopic = function(topic) {
+  console.log("delete topic function hit!");
+  flashCardService.deleteTopic(topic);
+}
+
 });

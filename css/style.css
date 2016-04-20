@@ -229,7 +229,7 @@ z-index: 9;
 .topicLinks {
   text-decoration: none;
   color: white;
-      cursor: pointer;
+  cursor: pointer;
 }
 
 .topicLinks:hover {
