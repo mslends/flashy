@@ -12,6 +12,7 @@ $scope.stuffynames = obj;
 
 // After the "Save" button is clicked, this function pushes whatever was put into the text field into my array. It is tied to topicService.js
 $scope.newTopic = function(newMenuTopic) {
+
   console.log("newTopic Function hit!");
   var something = {
     name: newMenuTopic,
@@ -19,6 +20,7 @@ $scope.newTopic = function(newMenuTopic) {
   };
   flashCardService.addNewTopic(something);
 
+$scope.newMenuTopic = "";
   var obj = {topic:[]};
   flashCardService.addNewTopic(obj);
   // $scope.flashCards = flashCardService.getFlashCards($scope.topic);
