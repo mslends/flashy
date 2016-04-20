@@ -9,7 +9,7 @@ angular.module("flashCards").controller('topicViewCtrl', function($scope, $state
 
 
 // Assigned my Firebase location to the mygetFirebaseRef variable
-  var mygetFirebaseRef = new Firebase("https://flashington.firebaseio.com/-KFfkkrNdwYPjejVmzWc/");
+  var mygetFirebaseRef = new Firebase("https://flashington.firebaseio.com/-KFlALUT2_FKchYLeuOL/");
 
 
 // Puts my flashcards object on scope

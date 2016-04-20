@@ -6,7 +6,7 @@ angular.module("flashCards").controller('navCtrl', function($scope, topicService
 // console.log("get topics hit!");
 
 
-var mygetFirebaseRef = new Firebase("https://flashington.firebaseio.com/-KFfkkrNdwYPjejVmzWc/");
+var mygetFirebaseRef = new Firebase("https://flashington.firebaseio.com/-KFlALUT2_FKchYLeuOL/");
 var obj = $firebaseArray(mygetFirebaseRef);
 $scope.stuffynames = obj;
 
@@ -22,5 +22,11 @@ $scope.newTopic = function(newMenuTopic) {
   var obj = {topic:[]};
   flashCardService.addNewTopic(obj);
   // $scope.flashCards = flashCardService.getFlashCards($scope.topic);
+
+
+  $scope.deleteTopic = function(topic) {
+    console.log("delete topic function hit!");
+    flashCardService.deleteTopic(topic);
+  }
 }
 });

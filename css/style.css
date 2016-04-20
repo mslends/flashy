@@ -214,7 +214,7 @@ select:focus {
 }
 
 .delete-topic-button {
-
+z-index: 9;
 }
 /*All styling for the topics in the menu*/
 .topics {

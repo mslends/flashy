@@ -1,5 +1,6 @@
 angular.module("flashCards").controller('mainCtrl', function($scope, topicService, flashCardService, $stateParams) {
 
+
 // function below gets topics from my getTopics function on topicService.js(bottom of page)
 $scope.topics = topicService.getTopics();
 console.log($scope.topics);
@@ -12,7 +13,11 @@ console.log($scope.topics);
       }
     });
 
-    $scope.deleteCard = function(card) {
-      flashCardService.deleteCard(card);
-    }
+    $scope.deleteCard = function(card, index, params) {
+      var params = $stateParams;
+      console.log($stateParams);
+      console.log('index:', index);
+
+      flashCardService.deleteCard(card, index, params);
+    }.bind(this)
 });
